@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Webpage</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.5;
+			background-color: #f2f2f2;
+		}
+
+		.page-header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+
+		.section {
+			float: left;
+			width: 100%;
+			background-color: #fff;
+			border: 1px solid #000;
+			margin: 0 0 20px;
+			position: relative;
+		}
+
+		.section-title {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			background-color: #000;
+			color: #fff;
+			padding: 5px 10px;
+			font-size: 16px;
+			border: 1px solid #000;
+		}
+
+		@media (min-width: 768px) {
+			.section {
+				width: 50%;
+				float: left;
+			}
+
+			.section:last-of-type {
+				clear: left;
+			}
+
+			.section:nth-child(3) {
+				width: 100%;
+				clear: both;
+			}
+		}
+
+		@media (min-width: 992px) {
+			.section {
+				width: calc(100% / 3);
+				float: left;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header class="page-header">My Webpage</header>
+	<section class="section">
+		<div class="section-title">Chicken</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec est sit amet dolor placerat efficitur eu eu ipsum. Nulla facilisi. Sed viverra venenatis lectus, vel aliquam nulla maximus eu. Duis accumsan ultrices dui, eget suscipit magna vehicula id.</p>
+	</section>
+	<section class="section">
+		<div class="section-title">Beef</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec est sit amet dolor placerat efficitur eu eu ipsum. Nulla facilisi. Sed viverra venenatis lectus, vel aliquam nulla maximus eu. Duis accumsan ultrices dui, eget suscipit magna vehicula id.</p>
+	</section>
+	<section class="section">
+		<div class="section-title">Sushi</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec est sit amet dolor placerat efficitur eu eu ipsum. Nulla facilisi. Sed viverra venenatis lectus, vel aliquam nulla maximus eu. Duis accumsan ultrices dui, eget suscipit magna vehicula id.</p>
+	</section>
+</body>
+</html>
